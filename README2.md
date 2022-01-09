@@ -1,12 +1,17 @@
 # Seoul Hardware Hackathon
 
+## 시연영상(유튜브 링크)
+[![시연영상](http://img.youtube.com/vi/4T2kJrdHKr8/0.jpg)](https://youtu.be/4T2kJrdHKr8) 
+
 ## 제작 HW
 ![2](https://user-images.githubusercontent.com/97210816/148665884-19e1eb42-1089-4277-aa35-e6a62111187c.jpg)
+
 
 ## 개발 배경 이슈
 1. 최근 5년간 독거노인 30% 증가 및 무연고 노인 고독사 2배 급증
 2. 복지부의 '65세 이상 인구 사망자 수 및 무연고 사망자 수'에 따르면, 무연고 노인 사망자 수는 2015년 666명에서 2020년 1331명으로 약 2배(99.8%) 증가
 3. 코로나 19의 확산 및 장기화로 복지관, 노인정 등을 방문하지 못해 더욱 고립된 상황
+
 
 
 ## 프로젝트 내용
@@ -25,15 +30,29 @@
 치매 예방용으로 글자색 읽기, 기억력 테스트, 속담 맟추기, 연산문제 풀기, 질문에 대답하기, 초성 퀴즈가 있고
 게임으로 틀린그림찾기, 숨은그림찾기, 가위바위보 를 제작
 
+
 ## 구성도
 ![3](https://user-images.githubusercontent.com/97210816/148665888-3cd4f2d4-975c-4d53-906e-1ceed4da2c03.jpg)
+라즈베리파이 카메라로 영상을 찍는다.
+
 ![4](https://user-images.githubusercontent.com/97210816/148665892-9b0937c9-3bc4-4f19-8f66-a080d46e2e55.jpg)
+디스플레이에서는 독거노인들을 위한 치매예방 및 게임을 실행하여준다.
+게임들은 소리를 통해 눈이 좋지 않은 사람들도 사용가능하도록 제작하였다.
+절전모드를 사용하여 장시간 미사용시 배터리 절약가능하다.
+
 ![5](https://user-images.githubusercontent.com/97210816/148665897-ec256bfd-9b99-44f5-b9fa-dad54e4155ab.jpg)
+IP주소를 통해 PC로 영상을 전송시켜준다.
+
 ![6](https://user-images.githubusercontent.com/97210816/148665900-a38f7795-df54-450a-b386-f4c97c753a91.jpg)
+라즈베리파이로 받은 영상을 통해 사람의 관절을 인식한다.
+사람 위치의 x값을 사용하여 이동해야할 방향을 정하고 사람과의 거리가 120cm가 되면 정지한다.
+
 ![7](https://user-images.githubusercontent.com/97210816/148665901-7fdd70eb-396d-4899-8296-adaa3e089847.jpg)
+
 ![8](https://user-images.githubusercontent.com/97210816/148665903-3de7bbb3-ad16-492e-9dda-0957b8348381.jpg)
 ![9](https://user-images.githubusercontent.com/97210816/148665905-325c5261-39b5-4f8d-bd70-a8970f8370b9.jpg)
 ![10](https://user-images.githubusercontent.com/97210816/148665907-87fc2313-f386-42fd-b7f9-21249e08cfb8.jpg)
+
 
 #### SubProcess/ 영상 촬영 , 게임
 Raspberry pi 4 (OS: Raspbian)
