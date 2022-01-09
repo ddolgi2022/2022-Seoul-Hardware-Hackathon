@@ -48,10 +48,17 @@ IP주소를 통해 PC로 영상을 전송시켜준다.
 사람 위치의 x값을 사용하여 이동해야할 방향을 정하고 사람과의 거리가 120cm가 되면 정지한다.
 
 ![7](https://user-images.githubusercontent.com/97210816/148665901-7fdd70eb-396d-4899-8296-adaa3e089847.jpg)
+HC-06을 통해 서버에서 STM32로 영상처리 된 값을 전송한다. 처리된 값은 0~9까지의 숫자로서 위치를 특정한다.
 
 ![8](https://user-images.githubusercontent.com/97210816/148665903-3de7bbb3-ad16-492e-9dda-0957b8348381.jpg)
+서버에서 받은 값을 통해서 PWM 값을 조절한다. 양쪽 DC모터를 PWM으로 조절함으로서 방향을 제어한다.
+
 ![9](https://user-images.githubusercontent.com/97210816/148665905-325c5261-39b5-4f8d-bd70-a8970f8370b9.jpg)
+동작감지 센서를 이용해서 사람의 움직임이 없다고 여길 경우 보호자에게 이메일을 발송한다.
+
 ![10](https://user-images.githubusercontent.com/97210816/148665907-87fc2313-f386-42fd-b7f9-21249e08cfb8.jpg)
+거리센서를 이용해 장애물이 있다고 판단하면 우회하여 진행한다.
+정면기준으로 양쪽 60도 위치에 거리센서를 부착하여 주행의 안정성을 늘렸다.
 
 
 #### SubProcess/ 영상 촬영 , 게임
@@ -68,3 +75,7 @@ opencv , pyserial , SMTP
 STM32B-L4S5I-IOT01A
 c
 PWM, ADC, USART, Timer
+
+#### 출처
+human-pose-estimation-opencv
+https://github.com/quanhua92/human-pose-estimation-opencv.git
